@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="15dp"
+            android:src="@drawable/vector"
+            android:layout_margin="20dp"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:layout_width="140dp"
+            android:layout_height="130dp"
+            android:layout_marginTop="70dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:src="@drawable/home" />
+
+        <TextView
+            android:id="@+id/ilmu_komputer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="190dp"
+            android:text="Ilmu Komputer"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:fontFamily="@font/poppinsbold"/>
+
+        <TextView
+            android:layout_below="@id/ilmu_komputer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp"
+            android:text="Berikut ini merupakan informasi terkait jurusan ilmu
+            komputer"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/black"
+            android:textSize="11sp"
+            android:fontFamily="@font/poppinssemibold"/>
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/main_recyclervie"
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:layout_marginLeft="20dp"
+        android:paddingTop="300dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
